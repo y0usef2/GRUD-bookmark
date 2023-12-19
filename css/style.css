@@ -1,0 +1,42 @@
+body{
+    background-color: #F7ECDE;
+}
+
+.container h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    font-weight: 500;
+    color: #352e28;
+    text-align: center;
+    position: relative;
+}
+.container  h1::after{
+    content: "";
+    position: absolute;
+    width: 21%;
+    height: 30%;
+    left: 510px;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+
+.container h1:hover::after{
+    height: 55%;
+}
+
+.dotted {
+    border-width: 0 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+
+.bookmark-body h2 {
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
